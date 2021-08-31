@@ -1,2 +1,5 @@
-# predicting-handwritten-digits-using-knn
-Predicts handwritten digits using a hyperparameter tuned K-Nearest Neighbors classifier
+# Predicting Handwritten Digits using KNN
+
+The MNIST database (Modified National Institute of Standards and Technology database) is a large database of handwritten digits that is commonly used for training various image processing systems. The dataset contains 420,000 instances of 785-featured data but 10,000 are only used for faster modelling. Each instance is row of flattened 28x28 pixels integer values, with additional one column for the label. Since K-Nearest Neighbors is used in this notebook, the train.csv will be the dataset as it contains labels or targets.
+
+**Conclusion:** With a 0.95 mean accuracy score in both manual grid search and using sklearn's GridSearchCV methods, the models can able to predict the unseen data with 95% confidence. By looking at the confusion matrix, we can say that the model did a pretty good prediction with minimal errors. Meanwhile, the f-1 scores of the features show a range of 90-98% scores which indicates that the KNN model used with parameters tuned using grid search did perform very well.
